@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercato</title>
+    <link rel="stylesheet" href="images.css">
+</head>
+<body>
+  <header class="mainHeader">
+
+    <div class="logo">
+      <img src="https://www.pngkey.com/png/full/807-8077127_cascade-logo-graphics.png" alt="">
+    </div>
+
+
+
+    <ul>
+      <li class="active"><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+      <li class="none"><a href="http://127.0.0.1:5500/img.html">CARDS</a></li>
+      <li class="sos"><a href="http://127.0.0.1:5500/list.html">LIST</a></li>
+      <li class="img"><a href="http://127.0.0.1:5500/images.html">IMAGES</a></li>
+      <li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+      <li><a href="http://127.0.0.1:5500/login.html?">LOGIN</a></li>
+    </ul>
+    
+
+
+    </header>
+
+    
+   <main id="mainDiv"><div class="full-img" id="fullimgbox">
+    <img src="Grid_Gallery_Img/img1.jpg" id="fullimg">
+    <span onclick="closefullimg()">x</span>
+</div>
+
+ 
+<div class="img-gallery">
+<img src="Grid_Gallery_Img/img1.jpg"  onclick="openfullimg(this.src)">
+<img src="Grid_Gallery_Img/img2.jpg"  onclick="openfullimg(this.src)">
+<img src="Grid_Gallery_Img/img3.jpg"  onclick="openfullimg(this.src)">
+<img src="Grid_Gallery_Img/img4.jpg"  onclick="openfullimg(this.src)">
+<img src="Grid_Gallery_Img/img5.jpg"  onclick="openfullimg(this.src)">
+<img src="Grid_Gallery_Img/img6.jpg"  onclick="openfullimg(this.src)">
+
+</div>
+
+
+<script>
+
+var fullimgbox=document.getElementById("fullimgbox")
+var fullimg=document.getElementById("fullimg")
+
+function openfullimg(pic){
+    fullimgbox.style.display ="flex";
+    fullimg.src=pic;
+}
+
+
+function closefullimg(){
+    fullimgbox.style.display ="none";
+  
+}
+
+</script>
+
+
+
+<h1>MERCATO IMAGES</h1>
+</main>
+</body>
+</html>
